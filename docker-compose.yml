@@ -1,0 +1,34 @@
+version: '2'
+
+services:
+
+  link-docker-redis:
+    image: "redis:alpine"
+  link-docker-postgresql:
+    image: "postgres"
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=AnthonyYuan
+      - POSTGRES_PASSWORD=GRE3000YMJ
+      - POSTGRES_DB=GRE3000
+
+  gre_service_31011:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /home/ubuntu/logs/gre-service:/go/src/GRE3000/logs
+      - /home/ubuntu/GRE3000/static/upload/avatar:/go/src/GRE3000/static/upload/avatar
+    ports:
+      - "31011:8080"
+
+  gre_service_31012:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /home/ubuntu/logs/gre-service:/go/src/GRE3000/logs
+      - /home/ubuntu/GRE3000/static/upload/avatar:/go/src/GRE3000/static/upload/avatar
+    ports:
+      - "31012:8080"
