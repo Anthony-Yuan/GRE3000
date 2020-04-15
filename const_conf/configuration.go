@@ -6,7 +6,7 @@ import (
 
 const (
 	ServiceScheme = "https://"
-	//DomainName    = "gre.jolly23.com"
+	
 	DomainName = ""
 
 	HttpPort  = 8080

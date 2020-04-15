@@ -65,7 +65,7 @@ VALUES
 
 INSERT INTO "user" (id, username, password, token, avatar, email, url, signature, in_time)
 VALUES
-	(1,'Jolly23','123123','fcd1cb8e-b71f-46c3-9974-7225997b40c7','/static/imgs/avatar.png','','https://jolly23.com','这家伙很懒，什么都没留下~','2017-10-01 09:22:16');
+	(1,'Anthony','123123','fcd1cb8e-b71f-46c3-9974-7225997b40c7','/static/imgs/avatar.png','',' ','这家伙很懒，什么都没留下~','2017-10-01 09:22:16');
 
 INSERT INTO user_roles (id, user_id, role_id)
 VALUES

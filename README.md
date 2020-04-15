@@ -1,4 +1,4 @@
-# [GRE3000](http://gre.jolly23.com/)
+# [GRE3000](http://gre.mingjie.me/)
 
 `很神圣的README`
 
@@ -17,7 +17,7 @@ const (
 	PgHostAddress = "111.111.111.111"
 	PgHostPort    = "5432"
 	DatabaseName  = "GRE3000"
-	PgUserName    = "JOLLY"
+	PgUserName    = "XXX"
 	PgPassword    = "HW(D*H(AWD"
 )
 
@@ -29,7 +29,7 @@ const (
 ## 运行
 
 ```bash
-git clone https://github.com/Jolly23/GRE3000.git
+git clone https://github.com/Anthony-Yuan/GRE3000.git
 cd GRE3000
 vim const_conf/private.go   # 写入上述go文件，配置数据库连接信息
 docker-compose build

@@ -4,6 +4,7 @@ services:
 
   link-docker-redis:
     image: "redis:alpine"
+  
   link-docker-postgresql:
     image: "postgres"
     ports:
